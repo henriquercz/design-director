@@ -1,97 +1,139 @@
-# Design Director v3 — Guia rápido
+# Design Director v3 — Quickstart PT-BR
 
-## Instalação
+## 1. Instalação mais fácil: `npx skills`
+
+### Codex + Claude Code global
 
 ```bash
-unzip design-director-skillset-v3.zip
-cd design-director-skillset-v3
+npx skills add henriquercz/design-director \
+  --skill design-director \
+  -g \
+  -a codex \
+  -a claude-code \
+  -y
+```
+
+### Só neste projeto
+
+```bash
+npx skills add henriquercz/design-director \
+  --skill design-director \
+  -a codex \
+  -a claude-code \
+  -y
+```
+
+## 2. Instalação completa com companions
+
+```bash
+git clone https://github.com/henriquercz/design-director.git
+cd design-director
 chmod +x scripts/*.sh
 ./scripts/install.sh --global --agents codex,claude-code --react
 ./scripts/doctor.sh
 python scripts/validate.py
 ```
 
-## Uso normal
+Com o especialista Revenue-Centric Design (licença upstream separada):
+
+```bash
+./scripts/install.sh --global --agents codex,claude-code --react --revenue
+```
+
+## 3. Como usar
 
 ### Codex
 
 ```text
 $design-director
-Quero que esta interface fique com qualidade de produto profissional.
-Analise o que existe, escolha sozinho os tratamentos necessários,
-preserve a funcionalidade e valide o resultado no final.
+Essa página está genérica e amadora. Analise o projeto, encontre as causas reais, escolha sozinho os tratamentos necessários, preserve a funcionalidade e valide desktop + mobile no final.
 ```
 
 ### Claude Code
 
 ```text
 /design-director
-Quero que esta interface fique com qualidade de produto profissional.
-Analise o que existe, escolha sozinho os tratamentos necessários,
-preserve a funcionalidade e valide o resultado no final.
+Melhore esse dashboard como produto real. Preserve os fluxos existentes, corrija composição, estados, responsividade e acessibilidade conforme necessário e verifique o resultado.
 ```
 
-Você não precisa dizer `audit`, `relayout`, `deslop` etc. O roteador escolhe.
+Você **não precisa** dizer `relayout`, `deslop`, `typeset` etc. A skill roteia automaticamente. Use o nome do modo apenas quando quiser restringir o escopo.
 
-## Quando nomear um modo
+## 4. Usar sem instalar
 
-Use quando quiser restringir o trabalho:
+Abra [`PROMPT-INSTALL.md`](PROMPT-INSTALL.md), copie o bootstrap e cole no agente/LLM antes do seu pedido.
 
-```text
-$design-director review esta página. Não edite nada.
-```
-
-```text
-$design-director responsive. Corrija somente mobile e tablet; desktop está aprovado.
-```
-
-```text
-$design-director relayout somente o hero. Preserve tipografia, cores e conteúdo.
-```
-
-## Comportamento importante da v3
-
-- `checkup`, `smell` e `review` explicitamente nomeados = relatório, sem correção no mesmo comando.
-- pedido livre como "melhore isso" = diagnóstico interno + correção, sem criar três relatórios desnecessários.
-- `redesign` = transformação completa do mundo visual.
-- `refine` = muda caráter com `push`, `settle`, `strip`, `proof`, `activate` ou `texture`.
-- `voice` = identidade/art direction de Brand.
-- `surface` = robustez de app/dashboard/produto.
-- `tokenize` = consolidação depois que as decisões estão boas.
-- `finish` = uso real, estados, remoção de ruído, verificação e score.
-
-## Prompt diário recomendado
-
-```text
-$design-director
-Trabalhe como diretor de design deste projeto.
-Leia o projeto antes de perguntar qualquer coisa.
-Preserve as funcionalidades existentes e os requisitos do produto.
-Identifique o tipo de surface e se o registro é Brand ou Product.
-Extraia os invariantes do prompt e impeça drift de templates anteriores.
-Diagnostique os problemas reais e escolha a menor sequência de tratamentos útil.
-Use as skills especialistas apenas quando acrescentarem valor.
-Implemente em arquivos reais, teste estados e dados extremos.
-Valide a interface renderizada em contextos relevantes.
-Faça no máximo um repair pass amplo e um repair pass final focado.
-Só declare ship-ready se os quality gates realmente passarem.
-```
-
-
-## Camada de outcome (v3)
-
-Para SaaS/startup você continua chamando apenas a skill principal. Ela pode classificar o problema como Acquire, Activate, Retain, Expand, Monetize ou Differentiate e então escolher o tratamento visual/UX correto.
-
-Exemplo:
-
-```text
-$design-director Nossa landing está bonita mas converte mal. Descubra se o problema é mensagem, prova, composição ou fricção e melhore sem dark patterns.
-```
-
-Especialista opcional de Revenue-Centric Design:
+Ou, com o Skills CLI:
 
 ```bash
-./scripts/install.sh --global --agents codex,claude-code --revenue
+npx skills use henriquercz/design-director@design-director --agent codex
+npx skills use henriquercz/design-director@design-director --agent claude-code
 ```
 
-Ele é instalado separadamente e mantém a licença/restrições próprias do repositório upstream.
+## 5. Claude na web — Skill nativa
+
+Gere o ZIP:
+
+```bash
+python scripts/build-web-bundles.py --claude
+```
+
+Será criado:
+
+```text
+dist/claude/design-director-claude-web.zip
+```
+
+No Claude:
+
+1. Ative **Code execution**.
+2. Vá em **Customize → Skills**.
+3. Clique em **+ → Create skill → Upload a skill**.
+4. Envie `design-director-claude-web.zip`.
+5. Ative a skill.
+
+Depois basta pedir normalmente; o Claude pode identificar quando usar a skill.
+
+## 6. ChatGPT na web — GPT personalizado
+
+Gere o pacote:
+
+```bash
+python scripts/build-web-bundles.py --chatgpt
+```
+
+Arquivos:
+
+```text
+dist/chatgpt/INSTRUCTIONS.md
+dist/chatgpt/design-director-knowledge.md
+```
+
+No ChatGPT:
+
+1. Abra **GPTs → Criar**.
+2. Cole `INSTRUCTIONS.md` em **Instruções**.
+3. Envie `design-director-knowledge.md` em **Conhecimento**.
+4. Habilite as ferramentas que quiser.
+5. Teste na Prévia e salve.
+
+A criação/edição de GPTs personalizados exige um plano elegível pago.
+
+## 7. ChatGPT na web — Projeto
+
+Se preferir um workspace em vez de um GPT:
+
+1. Crie um **Projeto**.
+2. Em **Configurações do projeto**, cole `INSTRUCTIONS.md` nas instruções.
+3. Adicione `design-director-knowledge.md` aos arquivos/fontes do projeto.
+4. Faça o trabalho de design dentro daquele projeto.
+
+## 8. Exemplos de controle explícito
+
+```text
+$design-director review esta landing page. Não edite arquivos.
+$design-director relayout esta hero. Preserve cor e tipografia.
+$design-director responsive corrija apenas tablet e mobile.
+$design-director finish faça somente o passe final antes de ship.
+```
+
+Para detalhes completos, veja [`README.md`](README.md) e [`INSTALL.md`](INSTALL.md).
