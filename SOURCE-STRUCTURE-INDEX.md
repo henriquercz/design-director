@@ -1,0 +1,378 @@
+# Source structure index
+
+This index records every H2/H3 heading encountered while reading the 5,106-line supplied Command Code design source. It is an audit aid; merge decisions are explained in `MERGE-ANALYSIS.md`.
+
+- L3: `## 1. SKILL.md (Arquivo Principal)`
+- L14: `## How a turn runs`
+- L24: `## Explicit report modes: smell, checkup, review`
+- L36: `## Bare `/design` routing`
+- L62: `## Composition comes from work`
+- L82: `## Prompt Invariants`
+- L102: `## Brief Sufficiency`
+- L114: `## Scope Discipline`
+- L122: `## Report Continuity`
+- L142: `## Blank project behavior`
+- L159: `## Quality control: Perfect execution principles`
+- L185: `## Tools`
+- L227: `## The Design Philosophy`
+- L231: `### Color is Mood, Not Decoration`
+- L248: `### Type is the Shape of Thought`
+- L260: `### Layout is Directing a Movie`
+- L281: `### Motion is Character`
+- L301: `### Interaction is Architecture`
+- L321: `### Responsive is Orchestration`
+- L334: `### Copy is Voice`
+- L347: `### The Smell Test`
+- L353: `## Register: Brand or Product`
+- L364: `## How to Actually Work`
+- L376: `## Truthful Completion`
+- L396: `## When in doubt`
+- L412: `## 2. Referências e Modos Específicos (references/)`
+- L414: `### Arquivo: references/border.md`
+- L424: `## Edges Follow Composition`
+- L446: `## System Bar`
+- L456: `## What Borders Are For`
+- L464: `## Weight`
+- L474: `## Color`
+- L484: `## Radius`
+- L494: `## Focus Rings`
+- L504: `## Dividers`
+- L514: `## Tables`
+- L524: `## Cards And Panels`
+- L532: `## Inputs`
+- L540: `## What I Refuse`
+- L555: `## How I Know Borders Work`
+- L575: `### Arquivo: references/button.md`
+- L585: `## Buttons Inherit The Work Pattern`
+- L607: `## System Bar`
+- L617: `## The Hierarchy`
+- L631: `## Shape And Size`
+- L643: `## States`
+- L653: `## Motion`
+- L673: `## Text`
+- L685: `## Placement`
+- L697: `## Icons`
+- L707: `## Groups`
+- L717: `## Loading`
+- L727: `## Danger`
+- L737: `## What I Refuse`
+- L753: `## How I Know Buttons Work`
+- L773: `### Arquivo: references/checkup.md`
+- L783: `## Composition Vital Sign`
+- L805: `## Prompt Fidelity Vital Sign`
+- L815: `## Evidence Bar`
+- L825: `## What I Check`
+- L845: `## Scoring`
+- L861: `## My Read`
+- L871: `## Fast Probes`
+- L881: `## Prescriptions`
+- L893: `## Report Boundary`
+- L909: `## What I Refuse`
+- L922: `## How I Know Checkup Is Done`
+- L939: `### Arquivo: references/color.md`
+- L949: `## Pre-execution checklist`
+- L966: `## Color Follows Composition`
+- L988: `## System Bar`
+- L1000: `## What I Decide First`
+- L1014: `## My Color Space`
+- L1024: `## Palette Strategies`
+- L1038: `## What I Refuse`
+- L1054: `## Contrast Is Not Optional`
+- L1064: `## The Grey Test`
+- L1072: `## Dark Mode`
+- L1080: `## Domain Default Trap`
+- L1090: `## How I Know Color Is Working`
+- L1111: `### Arquivo: references/create.md`
+- L1119: `## How I start`
+- L1129: `## What I Need To Know Before I Build`
+- L1160: `## Composition comes from the job`
+- L1182: `## Prompt Invariants`
+- L1202: `## Divergence Check`
+- L1212: `## Build Bar`
+- L1222: `## What I decide alone`
+- L1238: `## What I stop and ask about`
+- L1252: `## How I build`
+- L1272: `## What I never do`
+- L1286: `## How I know I'm done`
+- L1303: `## What I show when I'm done`
+- L1315: `## My toolkit`
+- L1321: `### Surface & Depth`
+- L1331: `### Composition`
+- L1339: `### Type & Language`
+- L1347: `### Motion`
+- L1359: `### Color`
+- L1367: `### Controls`
+- L1379: `## Design system`
+- L1404: `### Arquivo: references/design-html.md`
+- L1421: `## Visual Identity`
+- L1440: `## Layout Structure`
+- L1442: `### Container`
+- L1447: `### Section Pattern`
+- L1467: `## Header Pattern`
+- L1493: `## Content Sections`
+- L1495: `### 1. Color Palette Section`
+- L1514: `### 2. Typography Section`
+- L1528: `### 3. Buttons Section`
+- L1538: `### 4. Cards/Components Section`
+- L1550: `## Component Patterns`
+- L1552: `### Card`
+- L1561: `### Button Variants`
+- L1568: `### Pro Tip Card (Highlighted)`
+- L1578: `## Footer`
+- L1587: `## CSS Utilities Reference`
+- L1618: `## Implementation Checklist`
+- L1635: `### Arquivo: references/deslop.md`
+- L1645: `## Prerequisites: All Three Reports`
+- L1663: `## How I Work From The Reports`
+- L1682: `## The Odors And Their Antidotes`
+- L1684: `### Tech Gradient`
+- L1690: `### Generic Tech Hue`
+- L1696: `### Feature Tile Grid`
+- L1702: `### Accent Rail`
+- L1708: `### Unearned Blur`
+- L1714: `### Stat Monument`
+- L1720: `### Icon Topper`
+- L1726: `### Bounce Everywhere`
+- L1732: `### Default Type`
+- L1738: `### Center Stack`
+- L1746: `## Domain Default Trap`
+- L1756: `## Fixing Order`
+- L1771: `## What A Fixed Smell Looks Like`
+- L1783: `## Cohesion Check`
+- L1791: `## Verify Like A Designer`
+- L1807: `## Ship or Iterate`
+- L1815: `## What I Refuse`
+- L1829: `## How I Know Deslop Worked`
+- L1850: `### Arquivo: references/finish.md`
+- L1862: `## Discipline files`
+- L1874: `## Pre-execution checklist`
+- L1888: `## Composition Final Check`
+- L1910: `## My Posture`
+- L1918: `## What Finish Catches`
+- L1942: `## Applied-Only Rule`
+- L1960: `## Subtraction`
+- L1970: `## What I Use From Earlier Work`
+- L1978: `## What I Refuse`
+- L1991: `## How I Know Finish Is Done`
+- L2012: `### Arquivo: references/interaction.md`
+- L2022: `## Discipline files`
+- L2031: `## Interaction Follows Composition`
+- L2053: `## Behavior Bar`
+- L2063: `## Every Control Has A Life`
+- L2083: `## Focus Is Architecture`
+- L2093: `## Touch Is Physical`
+- L2103: `## Direction-Aware Controls`
+- L2111: `## Keyboard Path`
+- L2121: `## Forms`
+- L2133: `## Overlays`
+- L2143: `## Undo Beats Confirm`
+- L2151: `## Loading And Failure`
+- L2161: `## What I Refuse`
+- L2177: `## How I Know Interaction Works`
+- L2197: `### Arquivo: references/layout.md`
+- L2207: `## Composition Comes From Work`
+- L2229: `## Applied Layout Bar`
+- L2239: `## What I See First`
+- L2256: `## Rhythm`
+- L2266: `## The Three Planes`
+- L2280: `## Composition Mass`
+- L2288: `## Patterns I Use On Purpose`
+- L2306: `## Cards Are Not The Default`
+- L2314: `## The Cliffhanger`
+- L2320: `## Container Sense`
+- L2328: `## What I Refuse`
+- L2343: `## How I Know Layout Is Working`
+- L2362: `### Arquivo: references/motion.md`
+- L2374: `## Motion Follows Composition`
+- L2396: `## Creation Bar`
+- L2417: `## Existing Motion Is Not Enough`
+- L2427: `## My Default Timing`
+- L2440: `## What Motion Is Allowed To Say`
+- L2457: `## Material`
+- L2465: `## Physics`
+- L2475: `## Choreography`
+- L2483: `## Reduced Motion`
+- L2499: `## Timing Reference`
+- L2518: `## Waiting`
+- L2526: `## What I Refuse`
+- L2546: `## How I Know Motion Works`
+- L2570: `### Arquivo: references/redesign.md`
+- L2580: `## Discipline files`
+- L2594: `## Pre-execution checklist`
+- L2608: `## Composition Reset`
+- L2620: `## Full-Surface Bar`
+- L2630: `## What Stays`
+- L2638: `## What Changes`
+- L2648: `## The Direction`
+- L2658: `## Distance From The Old Design`
+- L2674: `## Cohesion`
+- L2684: `## Possible Directions`
+- L2708: `## System Rebuild`
+- L2718: `## States And Edges`
+- L2728: `## What I Refuse`
+- L2743: `## How I Know Redesign Worked`
+- L2762: `### Arquivo: references/refine.md`
+- L2772: `## Pre-execution checklist`
+- L2788: `## Composition Pressure`
+- L2810: `## Transformation Bar`
+- L2820: `## How I Choose The Move`
+- L2840: `## Push`
+- L2854: `## Settle`
+- L2866: `## Strip`
+- L2880: `## Proof`
+- L2892: `## Activate`
+- L2904: `## Texture`
+- L2916: `## Push Past Limits`
+- L2928: `## What I Refuse`
+- L2943: `## How I Know Refinement Is Done`
+- L2961: `### Arquivo: references/relayout.md`
+- L2973: `## Pre-execution checklist`
+- L2989: `## Composition Diagnosis`
+- L3011: `## What I Will Change`
+- L3029: `## Structural Change Bar`
+- L3047: `## Required companion references`
+- L3057: `## The Core Judgment`
+- L3067: `## Image And Text`
+- L3079: `## Composition Lanes`
+- L3099: `## Section Order`
+- L3109: `## Spatial Rhythm`
+- L3119: `## Balance`
+- L3129: `## What I Refuse`
+- L3144: `## How I Know Relayout Worked`
+- L3164: `### Arquivo: references/report-html.md`
+- L3184: `## Tailwind Runtime`
+- L3200: `## Core Requirement`
+- L3220: `## Tailwind Rules`
+- L3249: `## Canonical Scaffold`
+- L3379: `## Responsive Requirements`
+- L3389: `## Quality Bar`
+- L3405: `### Arquivo: references/responsive.md`
+- L3415: `## Discipline files`
+- L3425: `## Pre-execution checklist`
+- L3441: `## Composition Changes Across Context`
+- L3463: `## Adaptation Bar`
+- L3475: `## My Starting Bias`
+- L3483: `## Viewports I Respect`
+- L3493: `## Input Modes`
+- L3507: `## iOS Safari Input Zoom`
+- L3543: `## Thumb Reach`
+- L3551: `## Component Adaptation`
+- L3561: `## Environmental Preferences`
+- L3571: `## Text Direction`
+- L3583: `## Responsive Type`
+- L3591: `## Tables`
+- L3601: `## What I Refuse`
+- L3621: `## How I Know Responsive Works`
+- L3644: `### Arquivo: references/review.md`
+- L3654: `## Composition Judgment`
+- L3676: `## Prompt Fidelity Judgment`
+- L3686: `## Evidence Bar`
+- L3696: `## What I Read First`
+- L3706: `## The Experience Lens`
+- L3716: `## The Design Lenses`
+- L3734: `## Scoring`
+- L3755: `## What I Recommend`
+- L3765: `## Report Boundary`
+- L3781: `## What I Refuse`
+- L3794: `## How I Know Review Is Done`
+- L3812: `### Arquivo: references/setup.md`
+- L3822: `## Composition Defaults I Capture`
+- L3836: `## Applied Setup Bar`
+- L3846: `## What I Create`
+- L3866: `## What I Read Before Asking`
+- L3878: `## What I Ask`
+- L3893: `## How I Write `brief.md``
+- L3905: `## What I Refuse`
+- L3919: `## How I Know Setup Is Done`
+- L3937: `### Arquivo: references/shadow.md`
+- L3947: `## Depth Follows Composition`
+- L3969: `## System Bar`
+- L3979: `## What Shadows Are For`
+- L3987: `## Light Source`
+- L3997: `## Elevation`
+- L4007: `## Dark Themes`
+- L4017: `## Motion`
+- L4027: `## Shadow And Border`
+- L4037: `## Performance`
+- L4045: `## What I Refuse`
+- L4061: `## How I Know Shadows Work`
+- L4080: `### Arquivo: references/smell.md`
+- L4090: `## Composition Smell`
+- L4112: `## Prompt Drift Smell`
+- L4122: `## Evidence Bar`
+- L4132: `## What Smell Means`
+- L4142: `## The Odors I Track`
+- L4166: `## The Domain Default Trap`
+- L4176: `## What I Look For Instead`
+- L4192: `## How I Judge Severity`
+- L4202: `## What I Do After Finding Smell`
+- L4219: `## Scoring`
+- L4237: `## Report Boundary`
+- L4253: `## What I Refuse`
+- L4266: `## How I Know The Smell Is Gone`
+- L4285: `### Arquivo: references/surface.md`
+- L4295: `## Discipline files`
+- L4307: `## Composition Starts With The Operator's Job`
+- L4329: `## Hardening Bar`
+- L4339: `## The Register`
+- L4347: `## What Good Feels Like`
+- L4357: `## Type`
+- L4367: `## Color`
+- L4381: `## Components`
+- L4391: `## Density`
+- L4399: `## Motion`
+- L4407: `## What Product Can Own`
+- L4420: `## What I Refuse`
+- L4435: `## How I Know Product UI Works`
+- L4454: `### Arquivo: references/tokenize.md`
+- L4464: `## Composition Tokens`
+- L4486: `## Extraction Bar`
+- L4496: `## When I Tokenize`
+- L4506: `## What I Look For`
+- L4520: `## Naming`
+- L4530: `## Component Extraction`
+- L4540: `## Token Extraction`
+- L4550: `## What I Refuse`
+- L4565: `## How I Know Tokenize Worked`
+- L4584: `### Arquivo: references/typeset.md`
+- L4594: `## Type Follows Composition`
+- L4616: `## System Bar`
+- L4628: `## What Type Must Do`
+- L4640: `## Reading Distance`
+- L4648: `## Content Length Rules The Measure`
+- L4658: `## Font Choice`
+- L4670: `## Pairing & Font System`
+- L4694: `## Hierarchy`
+- L4704: `## Dark Surfaces`
+- L4712: `## Details I Do Not Skip`
+- L4725: `## What I Refuse`
+- L4740: `## How I Know The Type Is Working`
+- L4760: `### Arquivo: references/voice.md`
+- L4770: `## Discipline files`
+- L4782: `## Composition Starts With The Visitor's Job`
+- L4800: `## Prompt Invariants Are Sacred`
+- L4810: `## Landing Pages Need A Specific Proof Object`
+- L4820: `## Application Bar`
+- L4830: `## The Register`
+- L4848: `## The First 1.5 Seconds`
+- L4858: `## Type Carries Voice`
+- L4868: `## Color Must Commit`
+- L4878: `## Composition Has To Make A Choice`
+- L4895: `## Imagery`
+- L4905: `## Motion Permission`
+- L4915: `## What I Refuse`
+- L4930: `## How I Know The Brand Surface Works`
+- L4949: `### Arquivo: references/writing.md`
+- L4959: `## Writing Follows Composition`
+- L4981: `## Application Bar`
+- L4991: `## Buttons`
+- L5001: `## Errors`
+- L5011: `## Empty States`
+- L5021: `## Loading`
+- L5031: `## Success`
+- L5039: `## Labels And Help`
+- L5047: `## Voice And Tone`
+- L5057: `## Translation`
+- L5065: `## Punctuation`
+- L5071: `## What I Refuse`
+- L5087: `## How I Know The Writing Works`

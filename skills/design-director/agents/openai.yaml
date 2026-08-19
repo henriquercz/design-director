@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Director"
+  short_description: "Routes UI/UX work from diagnosis to verified implementation"
+  default_prompt: "Use $design-director to inspect the interface, infer the right design mode(s), preserve product truth, implement the smallest effective treatment, and verify the rendered result."
