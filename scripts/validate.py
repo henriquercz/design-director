@@ -39,12 +39,10 @@ else:
 lines=text.count('\n')+1
 if lines>500: errors.append(f'SKILL.md is {lines} lines; recommended maximum is 500')
 
-# Resolve backtick references from SKILL.md.
 for rel in re.findall(r'`((?:references|templates|scripts|assets)/[^`]+)`', text):
     rel=rel.rstrip('.,;:')
     if not (skill/rel).exists(): errors.append(f'missing referenced file: {rel}')
 
-# Check local markdown links inside the skill tree.
 for md in skill.rglob('*.md'):
     body=md.read_text(encoding='utf-8')
     for target in re.findall(r'\[[^\]]+\]\(([^)]+\.md)(?:#[^)]+)?\)', body):
@@ -62,13 +60,16 @@ for sh in (root/'scripts').glob('*.sh'):
 eval_text=(skill/'evals'/'EVALS.md').read_text(encoding='utf-8')
 eval_cases=len(re.findall(r'^##\s+\d+\.', eval_text, flags=re.M))
 
-required_v3 = {
+required_v4 = {
     'product-outcomes.md','ethical-persuasion.md','activation-retention.md',
-    'conversion-monetization.md','experimentation-evidence.md','feature-discipline.md'
+    'conversion-monetization.md','experimentation-evidence.md','feature-discipline.md',
+    'design-evidence.md','component-contracts.md','micro-craft.md'
 }
-missing_v3 = required_v3 - {x.name for x in (skill/'references').glob('*.md')}
-if missing_v3:
-    errors.append('missing v3 outcome references: ' + ', '.join(sorted(missing_v3)))
+missing_v4 = required_v4 - {x.name for x in (skill/'references').glob('*.md')}
+if missing_v4:
+    errors.append('missing v4 required references: ' + ', '.join(sorted(missing_v4)))
+if eval_cases < 46:
+    errors.append(f'v4 requires at least 46 eval cases; found {eval_cases}')
 
 if errors:
     print('Validation FAILED')

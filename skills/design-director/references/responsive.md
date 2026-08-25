@@ -4,11 +4,13 @@ Responsive design is recomposition across constraints, not merely shrinking desk
 
 ## Test from content, not device labels
 
-Use breakpoints where the content/layout begins to fail. Include representative narrow, medium, wide, and edge widths relevant to the project rather than blindly requiring one universal six-viewport gauntlet.
+Use breakpoints where content/layout begins to fail. Include representative narrow, medium, wide, and edge widths relevant to the project rather than blindly requiring one universal viewport gauntlet.
+
+Container size can matter more than viewport size for reusable components.
 
 ## Recompose
 
-Ask what changes at smaller containers:
+Ask what changes under tighter or different constraints:
 - order;
 - grouping;
 - disclosure;
@@ -16,21 +18,41 @@ Ask what changes at smaller containers:
 - table/list strategy;
 - navigation model;
 - action reach;
-- information density.
+- information density;
+- interaction primitive.
 
-Preserve capability whenever possible. If a feature truly cannot exist on a context, explain the product constraint instead of hiding it casually.
+Preserve capability whenever possible. If a feature truly cannot exist in a context, explain the product constraint instead of hiding it casually.
+
+## Responsive primitive adaptation
+
+The same user task may legitimately use a different interaction primitive across contexts.
+
+Examples, when the job/evidence supports them:
+- centered Dialog → bottom/side Drawer or Sheet on narrow touch screens;
+- anchored Popover → reachable Sheet when viewport/keyboard constraints make anchoring brittle;
+- persistent two-pane inspector → drill-in/detail route with a clear return path;
+- dense toolbar → grouped reachable action bar / overflow command surface;
+- wide comparison table → priority columns + preserved horizontal comparison or summary + drill-down.
+
+The data, semantics, action consequences, and current state should remain consistent across the adaptation. Do not create two unrelated product experiences for desktop and mobile.
 
 ## Input modes
 
 Use media features such as `pointer` and `hover` where useful. Never put essential functionality behind hover.
 
+Touch can require larger targets/reachable actions; keyboard can require stable focus/shortcuts; pointer can use hover affordances. Input mode is a design constraint, not merely a CSS detail.
+
 ## Containers
 
 Reusable components should adapt to the space they actually receive. Container queries can be preferable when the same component appears in sidebar/main/split contexts.
 
-## Safe areas
+Do not assume viewport breakpoints solve nested component constraints.
+
+## Safe areas and virtual keyboards
 
 Support notches/home indicators where edge-to-edge layouts or fixed actions require it via `env(safe-area-inset-*)` and appropriate viewport configuration.
+
+Check fixed/sticky controls and dialogs against mobile virtual keyboards; the commit action must not become unreachable.
 
 ## Zoom and reflow
 
@@ -51,7 +73,7 @@ Mirror icons only when direction is semantic (back/forward chevrons). Do not mir
 Choose based on the comparison job:
 - horizontal scroll with pinned identifiers;
 - responsive column priority;
-- stacked row details;
+- stacked row details only when cross-row comparison is no longer primary;
 - split view;
 - alternative summary + drill-down.
 
@@ -59,4 +81,4 @@ Do not convert every table to isolated cards if comparison alignment is the user
 
 ## Edge data
 
-Test long strings, empty values, huge lists, narrow cells, translations, numbers, timestamps, and slow/no network states.
+Test long strings, empty values, huge lists, narrow cells, translations, numbers, timestamps, slow/no network states, sticky controls, and overlays near viewport edges.

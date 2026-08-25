@@ -1,4 +1,17 @@
-# Design Director v3 — Quickstart PT-BR
+# Design Director v4 — Quickstart PT-BR
+
+## O principal: continua fácil de usar
+
+Você não precisa saber `relayout`, `deslop`, `motion`, `component-contracts` nem nenhum detalhe interno.
+
+Isto já funciona:
+
+```text
+$design-director
+Não gostei dessa seção. Redesenhe para ficar mais profissional, específica para o produto e melhor resolvida. Preserve o que já funciona.
+```
+
+A v4 identifica sozinha o que precisa inspecionar e quais tratamentos aplicar.
 
 ## 1. Instalação mais fácil: `npx skills`
 
@@ -34,44 +47,59 @@ chmod +x scripts/*.sh
 python scripts/validate.py
 ```
 
-Com o especialista Revenue-Centric Design (licença upstream separada):
+Com Revenue-Centric Design (licença upstream separada):
 
 ```bash
 ./scripts/install.sh --global --agents codex,claude-code --react --revenue
 ```
 
-## 3. Como usar
+## 3. O que a v4 melhora internamente
 
-### Codex
+Sem mudar seu prompt, a skill agora também pode:
+
+- separar regra real do design system de algo apenas inferido por screenshot;
+- pesquisar/reutilizar o componente/API real do projeto antes de inventar outro;
+- verificar contratos de Dialog, Tooltip, Tabs, Toast, loading, forms, tables e outros componentes;
+- tomar decisões de animação por propósito + frequência + input + distância/custo;
+- adaptar o próprio modelo de interação no responsive, como Dialog → Drawer quando fizer sentido;
+- revisar micro-craft: raios aninhados, alinhamento óptico, espaçamento relacional, mídia, stacking e transições;
+- testar melhor keyboard, semantics, estados e motion;
+- limitar especialistas para não virar uma pilha de skills concorrentes.
+
+## 4. Codex
 
 ```text
 $design-director
-Essa página está genérica e amadora. Analise o projeto, encontre as causas reais, escolha sozinho os tratamentos necessários, preserve a funcionalidade e valide desktop + mobile no final.
+Essa landing está genérica e amadora. Entenda o projeto, escolha sozinho os tratamentos necessários e deixe profissional sem quebrar as funcionalidades. Valide desktop e mobile.
 ```
 
-### Claude Code
+## 5. Claude Code
 
 ```text
 /design-director
-Melhore esse dashboard como produto real. Preserve os fluxos existentes, corrija composição, estados, responsividade e acessibilidade conforme necessário e verifique o resultado.
+Não gostei dessa parte do dashboard. Redesenhe para ficar mais profissional e melhor de operar. Preserve os fluxos e decida sozinho o que precisa mudar.
 ```
 
-Você **não precisa** dizer `relayout`, `deslop`, `typeset` etc. A skill roteia automaticamente. Use o nome do modo apenas quando quiser restringir o escopo.
+Use nomes de modos apenas quando quiser limitar o escopo:
 
-## 4. Usar sem instalar
+```text
+$design-director review esta landing. Não edite.
+$design-director relayout apenas a hero. Preserve cores e tipografia.
+$design-director responsive corrija somente mobile/tablet.
+```
 
-Abra [`PROMPT-INSTALL.md`](PROMPT-INSTALL.md), copie o bootstrap e cole no agente/LLM antes do seu pedido.
+## 6. Usar sem instalar
 
-Ou, com o Skills CLI:
+Abra [`PROMPT-INSTALL.md`](PROMPT-INSTALL.md), copie o bootstrap e cole no agente/LLM antes do pedido.
+
+Ou:
 
 ```bash
 npx skills use henriquercz/design-director@design-director --agent codex
 npx skills use henriquercz/design-director@design-director --agent claude-code
 ```
 
-## 5. Claude na web — Skill nativa
-
-Gere o ZIP:
+## 7. Claude na web — Skill nativa
 
 ```bash
 python scripts/build-web-bundles.py --claude
@@ -84,18 +112,13 @@ dist/claude/design-director-claude-web.zip
 ```
 
 No Claude:
+1. ative **Code execution**;
+2. vá em **Customize → Skills**;
+3. **+ → Create skill → Upload a skill**;
+4. envie o ZIP;
+5. ative Design Director.
 
-1. Ative **Code execution**.
-2. Vá em **Customize → Skills**.
-3. Clique em **+ → Create skill → Upload a skill**.
-4. Envie `design-director-claude-web.zip`.
-5. Ative a skill.
-
-Depois basta pedir normalmente; o Claude pode identificar quando usar a skill.
-
-## 6. ChatGPT na web — GPT personalizado
-
-Gere o pacote:
+## 8. ChatGPT na web — GPT ou Projeto
 
 ```bash
 python scripts/build-web-bundles.py --chatgpt
@@ -108,32 +131,17 @@ dist/chatgpt/INSTRUCTIONS.md
 dist/chatgpt/design-director-knowledge.md
 ```
 
-No ChatGPT:
+### GPT personalizado
+1. **GPTs → Criar**;
+2. cole `INSTRUCTIONS.md` em **Instruções**;
+3. envie `design-director-knowledge.md` em **Conhecimento**;
+4. habilite as ferramentas desejadas;
+5. teste e salve.
 
-1. Abra **GPTs → Criar**.
-2. Cole `INSTRUCTIONS.md` em **Instruções**.
-3. Envie `design-director-knowledge.md` em **Conhecimento**.
-4. Habilite as ferramentas que quiser.
-5. Teste na Prévia e salve.
+### Projeto
+1. crie um **Projeto**;
+2. cole `INSTRUCTIONS.md` nas instruções do projeto;
+3. adicione `design-director-knowledge.md` como arquivo/fonte;
+4. faça o trabalho de design dentro do projeto.
 
-A criação/edição de GPTs personalizados exige um plano elegível pago.
-
-## 7. ChatGPT na web — Projeto
-
-Se preferir um workspace em vez de um GPT:
-
-1. Crie um **Projeto**.
-2. Em **Configurações do projeto**, cole `INSTRUCTIONS.md` nas instruções.
-3. Adicione `design-director-knowledge.md` aos arquivos/fontes do projeto.
-4. Faça o trabalho de design dentro daquele projeto.
-
-## 8. Exemplos de controle explícito
-
-```text
-$design-director review esta landing page. Não edite arquivos.
-$design-director relayout esta hero. Preserve cor e tipografia.
-$design-director responsive corrija apenas tablet e mobile.
-$design-director finish faça somente o passe final antes de ship.
-```
-
-Para detalhes completos, veja [`README.md`](README.md) e [`INSTALL.md`](INSTALL.md).
+Para detalhes completos, veja [`README.md`](README.md), [`INSTALL.md`](INSTALL.md) e [`V4-RESEARCH-AUDIT.md`](V4-RESEARCH-AUDIT.md).

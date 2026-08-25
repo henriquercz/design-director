@@ -2,6 +2,18 @@
 
 Design Director remains the single director. Companion skills provide specialist knowledge or an additional implementation/audit lens.
 
+## Context-budget rule
+
+Do not pile on specialists.
+
+- **0 companions** — normal when bundled Design Director knowledge is sufficient.
+- **1 companion** — common specialist case.
+- **2 companions** — only when two independent knowledge gaps materially affect the decision.
+- **3 companions** — reserved for broad review/redesign/multi-surface work with genuinely distinct specialist roles.
+- **>3 companions** — do not do this. Context/routing dilution usually outweighs value.
+
+Prefer the most specific relevant specialist. Do not invoke several generalists to answer the same question.
+
 ## frontend-design
 Use when:
 - creating a new visually important surface;
@@ -31,13 +43,18 @@ Use when React/Next architecture, rendering, loading, bundle/performance, or com
 ## claude-design (optional)
 Can be used as a second-opinion lens when installed, but avoid parallel redesign directions. Design Director resolves conflicts.
 
+## Component/registry specialists
+When the current project already uses a component registry/library/MCP (for example an accessible component system or project-native registry), query that source for the **actual current API/examples** when it improves implementation accuracy.
+
+Do not install or switch component libraries merely because a specialist exists. Read `implementation.md` and `component-contracts.md`.
+
 ## Conflict policy
 
 When specialist advice conflicts:
 1. explicit user constraints;
 2. product truth and task completion;
 3. accessibility/safety;
-4. current design system/project memory;
+4. current verified design system/project memory;
 5. Design Director thesis;
 6. specialist heuristic.
 

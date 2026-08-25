@@ -35,16 +35,25 @@ If `.design-director/brief.md` exists, read it.
 If `.design-director/reports/*.md` exists, read relevant reports before treatment.
 Existing reports inform the next pass; they do not replace active-mode judgment.
 
-### 4. Choose diagnosis depth
+### 4. Establish evidence before claiming a design system
+
+If the task depends on existing style/system/reference fidelity, read `design-evidence.md` and distinguish normative, observed, inferred, and unknown claims.
+
+Prefer explicit docs/tokens/shared APIs over local repetition; prefer live implementation/computed behavior over screenshot inference for implementation details.
+
+Do not invent hidden token names, component props, breakpoints, or design intent from screenshots alone.
+
+### 5. Choose diagnosis depth
 
 - obvious generated/generic complaint → internal smell scan;
 - quick health question → checkup lens;
 - broad "make it better" → review lens + anti-slop scan as needed;
-- clear local defect → inspect only enough to establish root cause.
+- clear local defect → inspect only enough to establish root cause;
+- component/interaction complaint → inspect applicable component contract and project primitive/API.
 
 Internal diagnosis is working state, not a required artifact.
 
-### 5. Choose the smallest effective treatment
+### 6. Choose the smallest effective treatment
 
 Map root cause to mode:
 
@@ -57,7 +66,7 @@ Map root cause to mode:
 | type hierarchy/measure/font behavior | `typeset` |
 | palette/semantic roles/contrast | `recolor` |
 | controls/states/recovery/feedback | `interaction` |
-| transition/causality/continuity | `motion` |
+| transition/causality/continuity/frequency mismatch | `motion` |
 | mobile/container/input/direction adaptation | `responsive` |
 | semantic/focus/assistive-access issue | `a11y` |
 | brand recognition/proof/art direction | `voice` |
@@ -68,16 +77,32 @@ Map root cause to mode:
 
 Treat structural causes before cosmetic symptoms.
 
-### 6. Multi-mode chains
+### 7. Multi-mode chains
 
 A broad request may need a short chain. Typical examples:
 
 - generic landing page → internal review → `deslop` + `relayout` → `voice` → `finish`
 - brittle dashboard → internal review → `surface` + `responsive` → `interaction` → `finish`
-- visually incoherent mature product → `tokenize` only after the desired system is proven, never before redesign decisions
+- visually incoherent mature product → redesign/refine first; `tokenize` only after the desired system is proven
 - full transformation → `redesign` already owns composition, color, type, depth, components, and motion; do not redundantly run every subsystem as separate modes
 
 Prefer 1–3 treatment modes. More than that should be justified by distinct root causes.
+
+### 8. Contrastive direction only when it earns its cost
+
+When a substantial direction is genuinely ambiguous, `direction/create/redesign` may explore 2–3 variants along one primary axis (structure, density, emphasis, type, or voice) before converging.
+
+Do not create variants for every request. Do not present three palette swaps as three directions.
+
+## Component/API routing
+
+When the project already uses a shared primitive/library/registry:
+1. inspect the actual component/API/source/examples;
+2. validate planned props/composition;
+3. reuse/extend it if healthy;
+4. hand-roll only for a real gap.
+
+Read `implementation.md` + `component-contracts.md` for complex primitives.
 
 ## Explicit report modes
 
@@ -86,8 +111,6 @@ Prefer 1–3 treatment modes. More than that should be justified by distinct roo
 - generate their markdown report under `.design-director/reports/`;
 - optionally generate HTML only if configured/requested;
 - do not edit product UI in the same invocation.
-
-Why: explicit diagnosis should remain inspectable and reversible.
 
 A freeform "improve this" may run the same diagnostics internally and continue directly into treatment without generating report files.
 
@@ -104,7 +127,7 @@ Do not show a mode menu unless the user asks for one.
 Decide without asking:
 - spacing, radius, shade, font weight, microcopy details;
 - exact layout mechanics inside a known goal;
-- which reference files to consult;
+- which reference files/specialists to consult;
 - common edge-state handling;
 - ordinary design tradeoffs.
 
@@ -117,7 +140,7 @@ Ask one focused question only for a true blocker:
 
 Before asking, perform an "answered already" pass across prompt + repo + project memory.
 
-## Outcome-sensitive routing (v3)
+## Outcome-sensitive routing
 
 When the request involves SaaS/startup conversion, onboarding, pricing, retention/churn, expansion, feature adoption, growth, or differentiation, activate the outcome layer before choosing visual treatment:
 
@@ -134,4 +157,4 @@ When the request involves SaaS/startup conversion, onboarding, pricing, retentio
 
 `outcome` is a diagnostic/strategy alias. It does not override visual modes; it determines what the design pass should optimize and which evidence would prove success.
 
-Do not optimize a business metric through deceptive defaults, hidden commitment, artificial scarcity, obstructed cancellation, artificial lock-in, or compulsion engineering. Read `ethical-persuasion.md` whenever the requested mechanism can surprise or pressure the user.
+Do not optimize a business metric through deceptive defaults, hidden commitment, artificial scarcity, obstructed cancellation, artificial lock-in, or compulsion engineering.

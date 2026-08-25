@@ -1,6 +1,6 @@
-# Design Director v3 evaluation cases
+# Design Director v4 evaluation cases
 
-Each case should be tested for routing, scope discipline, artifacts, and completion truthfulness.
+Each case should be tested for routing, scope discipline, artifacts, evidence confidence, implementation truth, component contracts, and completion truthfulness.
 
 ## 1. Freeform generic landing page
 Prompt: "This landing page feels like AI. Make it premium and specific to our product."
@@ -129,3 +129,62 @@ Expected: reject artificial switching cost; strengthen recurring utility/workflo
 ## 32. Growth specialist routing
 Prompt: "Audit our SaaS onboarding for activation, pricing and churn mechanics."
 Expected: Design Director activates outcome layer; if optional revenue-centric-design is installed and allowed, may consult it as specialist while retaining Director ownership of UX/accessibility/implementation.
+
+## 33. Screenshot evidence does not invent tokens
+Prompt: "Here is a screenshot of another page in our product. Rebuild this section using the exact design tokens from the screenshot."
+Expected: extracts visible hierarchy/proportion/color relationships but refuses to claim hidden token names/exact internals from pixels; marks reconstructed values inferred unless repository/live evidence confirms them.
+
+## 34. Repository evidence beats screenshot inference
+Setup: screenshot suggests 28px radius; repo theme exposes `--radius-panel: 24px` and shared Panel uses it.
+Expected: normative repo token/API wins for system implementation; screenshot difference is treated as possible drift/scale/context, not proof of a new token.
+
+## 35. Live API validation before component code
+Setup: project uses a component registry/library with current Button API.
+Prompt: "Add loading and destructive variants."
+Expected: inspect actual installed/registry API/types/examples before writing; do not invent remembered props; extend only for a real missing role.
+
+## 36. Complex combobox reuse
+Setup: project already has an accessible Combobox primitive.
+Prompt: "Build a searchable country picker."
+Expected: reuse/compose the real primitive and its keyboard/focus behavior instead of hand-rolling a visual dropdown; validate current API.
+
+## 37. Dialog component contract
+Prompt: "Add a delete-account confirmation modal."
+Expected: accessible name/description, consequence-specific actions, focus entry/trap as required, Escape/close behavior, focus restore, long-content/viewport handling, destructive recovery semantics.
+
+## 38. Responsive dialog to drawer
+Prompt: "This account editor dialog is cramped on mobile. Fix mobile without changing the task."
+Expected: may adapt centered Dialog to Sheet/Drawer on narrow touch contexts while preserving data/state/actions/semantics; does not merely shrink width.
+
+## 39. Loading geometry
+Prompt: "Add loading to Save and to the profile card."
+Expected: loading button preserves footprint/prevents duplicate action; skeleton/reserved state approximates final content geometry when appropriate; avoids avoidable layout shift/fake progress.
+
+## 40. Tooltip traversal
+Prompt: "Toolbar icons need tooltips."
+Expected: accessible names remain; tooltip appears on focus/hover, handles collision; initial hover may have a small delay while subsequent intentional traversal can be near-instant; does not block action.
+
+## 41. High-frequency keyboard motion
+Prompt: "Make command-palette ArrowDown navigation feel premium with animations."
+Expected: selected state can move/transition, but repeated keyboard input is effectively immediate; no queued 200ms flourish per keypress; reduced motion remains valid.
+
+## 42. Origin-aware overlay motion
+Prompt: "Animate this popover from the center of the screen."
+Setup: popover is triggered by a small toolbar button.
+Expected: challenge unrelated center-origin; prefer trigger-related origin/path when it clarifies causality, unless product direction provides a stronger reason.
+
+## 43. Interruptible motion
+Prompt: "Polish the drawer transition."
+Expected: opening/closing reverses cleanly when intent changes mid-transition; no stale queued state; input lock only when truly required.
+
+## 44. Contrastive variants
+Prompt: "We aren't sure how this analytics hero should feel. Give me three directions before implementing."
+Expected: variants differ meaningfully on one primary axis (e.g. structure/density/emphasis), not only colors; compare tradeoffs, select/converge before final system.
+
+## 45. Micro-craft without numerology
+Prompt: "Finish the cards; nested radii and icons feel slightly off."
+Expected: optical/concentric nested corners, icon/text alignment and consistent relationship spacing; does not enforce `outer = inner + padding` as an exact universal formula.
+
+## 46. Companion cap
+Prompt: "Use every installed design skill to improve this button."
+Expected: Design Director refuses specialist pile-on; uses zero or one relevant specialist for the narrow task and remains the director; never invokes >3 companions.
