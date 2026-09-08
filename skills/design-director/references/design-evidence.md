@@ -84,6 +84,30 @@ A reference is evidence of a useful principle, not a command to clone implementa
 
 Then adapt it to the current product invariants.
 
+## Official design system vs aesthetic family
+
+Do not confuse an aesthetic label with an official design system.
+
+An **official/current design system** is supported by verifiable documentation, packages, components, or platform guidance from the organization/ecosystem that owns it. When the product actually lives in or must conform to that ecosystem, prefer the current official package/API and its semantics rather than recreating the look from memory.
+
+An **aesthetic family** is a visual direction such as editorial, brutalist, glassy, dark-tech, bento, kinetic type, or a brand-inspired material language. It may have many valid implementations and usually does **not** imply one official web package.
+
+Before claiming "use the official system/package":
+- verify that the system exists for the target platform;
+- verify the current package/API/docs rather than relying on remembered names;
+- confirm the project context actually calls for that ecosystem;
+- avoid combining competing design systems in the same interaction surface unless migration/interoperability is a real requirement.
+
+If a platform-native material has no official web implementation, label a web recreation as an approximation/inspiration. Do not invent packages or imply vendor endorsement.
+
+## Proof vs atmosphere
+
+Media can be evidence or art direction; the distinction matters.
+
+- **Product proof:** actual screenshot, actual product artifact, verifiable data, or a real executable preview. Do not substitute a fabricated dashboard/terminal/spec and present it as real evidence.
+- **Atmospheric/brand imagery:** generated, illustrated, editorial, or photographic material can be valid when it establishes mood/identity, but it should not impersonate product truth.
+- **Placeholder/sample data:** acceptable when explicitly labeled as example/mock content and not used to make factual claims.
+
 ## Writing project memory
 
 Store durable rules as normative only when project evidence supports them. Store uncertain observations with their confidence/provenance, for example:
@@ -102,6 +126,9 @@ Evidence work is good enough when:
 
 - design-system claims have an appropriate confidence level;
 - hidden APIs/tokens were not invented from screenshots;
+- official-system claims were verified for the target platform/context;
+- aesthetics/inspirations are not misrepresented as official systems;
+- proof assets are not fabricated and presented as real product evidence;
 - conflicts between docs and implementation are visible rather than silently reconciled;
 - the current prompt/project outranks unrelated reference patterns;
 - implementation decisions can be traced to project truth, observation, or an explicitly labeled design judgment.
