@@ -48,6 +48,18 @@ Reusable components should adapt to the space they actually receive. Container q
 
 Do not assume viewport breakpoints solve nested component constraints.
 
+## Dynamic viewport height
+
+Mobile browser chrome, virtual keyboards, and installed-app contexts can make classic `100vh` behave differently from the actually visible area.
+
+For full-height heroes, sheets, onboarding panels, or edge-to-edge surfaces where this matters:
+- consider modern dynamic/small viewport units (`dvh`, `svh`, etc.) or a platform-specific measured strategy;
+- choose the unit based on whether the surface should track the currently visible viewport or remain stable to a smaller safe viewport;
+- test browser chrome expansion/collapse and orientation changes;
+- do not turn `100dvh` into a universal replacement for every `vh` usage.
+
+A full-height visual should not hide a primary action behind browser chrome merely because desktop viewport math looked correct.
+
 ## Safe areas and virtual keyboards
 
 Support notches/home indicators where edge-to-edge layouts or fixed actions require it via `env(safe-area-inset-*)` and appropriate viewport configuration.
@@ -81,4 +93,4 @@ Do not convert every table to isolated cards if comparison alignment is the user
 
 ## Edge data
 
-Test long strings, empty values, huge lists, narrow cells, translations, numbers, timestamps, slow/no network states, sticky controls, and overlays near viewport edges.
+Test long strings, empty values, huge lists, narrow cells, translations, numbers, timestamps, slow/no network states, sticky controls, overlays near viewport edges, browser chrome changes, and virtual-keyboard intrusion where relevant.

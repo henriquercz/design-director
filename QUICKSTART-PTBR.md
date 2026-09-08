@@ -1,8 +1,8 @@
-# Design Director v4 — Quickstart PT-BR
+# Design Director v4.1 — Quickstart PT-BR
 
 ## O principal: continua fácil de usar
 
-Você não precisa saber `relayout`, `deslop`, `motion`, `component-contracts` nem nenhum detalhe interno.
+Você não precisa saber `relayout`, `deslop`, `motion`, contratos de componentes, posture axes nem nenhum detalhe interno.
 
 Isto já funciona:
 
@@ -11,7 +11,7 @@ $design-director
 Não gostei dessa seção. Redesenhe para ficar mais profissional, específica para o produto e melhor resolvida. Preserve o que já funciona.
 ```
 
-A v4 identifica sozinha o que precisa inspecionar e quais tratamentos aplicar.
+A v4.1 entende o pedido abstrato, lê o projeto e decide sozinha o que precisa inspecionar e quais tratamentos aplicar.
 
 ## 1. Instalação mais fácil: `npx skills`
 
@@ -53,18 +53,19 @@ Com Revenue-Centric Design (licença upstream separada):
 ./scripts/install.sh --global --agents codex,claude-code --react --revenue
 ```
 
-## 3. O que a v4 melhora internamente
+## 3. O que a v4.1 melhora internamente
 
-Sem mudar seu prompt, a skill agora também pode:
+Além de tudo da v4, sem mudar seu prompt a skill agora também pode:
 
-- separar regra real do design system de algo apenas inferido por screenshot;
-- pesquisar/reutilizar o componente/API real do projeto antes de inventar outro;
-- verificar contratos de Dialog, Tooltip, Tabs, Toast, loading, forms, tables e outros componentes;
-- tomar decisões de animação por propósito + frequência + input + distância/custo;
-- adaptar o próprio modelo de interação no responsive, como Dialog → Drawer quando fizer sentido;
-- revisar micro-craft: raios aninhados, alinhamento óptico, espaçamento relacional, mídia, stacking e transições;
-- testar melhor keyboard, semantics, estados e motion;
-- limitar especialistas para não virar uma pilha de skills concorrentes.
+- inferir internamente **variância visual, intensidade de motion e densidade de informação** sem pedir sliders numéricos;
+- preservar SEO, analytics, rotas/anchors, formulários, consentimento/legal e acessibilidade em redesigns de produção;
+- separar um **design system oficial** de uma estética inspirada e verificar APIs/pacotes atuais antes de inventar dependências;
+- detectar melhor slop de landing pages: eyebrows repetidos, numeração decorativa, fake status/version/weather, fake screenshots e precisão inventada;
+- diferenciar imagem de atmosfera de **prova real do produto**;
+- fazer copy self-audit de CTA, terminologia, referents e claims;
+- verificar dependências e evitar render churn em interações de pointer/scroll de alta frequência;
+- usar `dvh`/`svh` quando resolvem browser chrome mobile, sem transformar isso em regra universal;
+- manter tudo calibrado: não bane Inter, serif, em dash, Lucide, gradientes, dark/light, múltiplos accents ou qualquer estética só porque um modelo costuma abusar dela.
 
 ## 4. Codex
 
@@ -144,4 +145,4 @@ dist/chatgpt/design-director-knowledge.md
 3. adicione `design-director-knowledge.md` como arquivo/fonte;
 4. faça o trabalho de design dentro do projeto.
 
-Para detalhes completos, veja [`README.md`](README.md), [`INSTALL.md`](INSTALL.md) e [`V4-RESEARCH-AUDIT.md`](V4-RESEARCH-AUDIT.md).
+Para detalhes completos, veja [`README.md`](README.md), [`INSTALL.md`](INSTALL.md), [`V4-RESEARCH-AUDIT.md`](V4-RESEARCH-AUDIT.md) e [`TASTE-SKILL-AUDIT.md`](TASTE-SKILL-AUDIT.md).

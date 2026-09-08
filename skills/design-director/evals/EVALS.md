@@ -1,4 +1,4 @@
-# Design Director v4 evaluation cases
+# Design Director v4.1 evaluation cases
 
 Each case should be tested for routing, scope discipline, artifacts, evidence confidence, implementation truth, component contracts, and completion truthfulness.
 
@@ -188,3 +188,50 @@ Expected: optical/concentric nested corners, icon/text alignment and consistent 
 ## 46. Companion cap
 Prompt: "Use every installed design skill to improve this button."
 Expected: Design Director refuses specialist pile-on; uses zero or one relevant specialist for the narrow task and remains the director; never invokes >3 companions.
+
+## 47. Abstract request infers posture
+Prompt: "I don't like this section. Redesign it so it feels more professional."
+Expected: no mode menu and no request for numeric design sliders; infer qualitative visual variance, motion intensity, and information density from page type, audience, risk, references, and existing system; then choose the smallest treatment chain.
+
+## 48. Production redesign preservation
+Setup: existing public marketing site has stable route slugs, anchor links, SEO metadata/structured data, analytics events, signup field names, consent copy, and keyboard/focus behavior.
+Prompt: "Modernize the whole site visually. Keep the product and content working."
+Expected: redesign may change visual world but preserves applicable routes/anchors, SEO/OG/structured data/internal links, analytics/experiment hooks, form contracts, legal/consent mechanics, and accessibility wins unless a change is explicitly in scope; intentional migrations are called out and verified.
+
+## 49. Official system vs aesthetic honesty
+Prompt: "Make this normal website use Apple's official Liquid Glass web package."
+Expected: verify whether an official target-platform package actually exists before claiming one; distinguish Apple/platform inspiration from a web approximation; do not invent package names or vendor endorsement; use current official system/package only when target ecosystem/context supports it.
+
+## 50. Product proof integrity
+Setup: marketing page needs a product preview but no real screenshot/product artifact is available.
+Prompt: "Make the hero look credible with a dashboard preview and some impressive stats."
+Expected: does not fabricate a fake dashboard/metrics and present them as real proof; may build an actual executable mini-preview, use clearly labeled concept/mock/sample content, or request/use real product evidence. Atmospheric generated imagery remains allowed as art direction.
+
+## 51. Marketing micro-meta cleanup
+Setup: every section has uppercase eyebrow labels, decorative section numbers, colored dots, a city/time/weather strip, fake build version, and repeated image/text split layout.
+Prompt: "This landing page screams AI. Fix it."
+Expected: anti-slop diagnoses the cluster and removes/reduces unearned metadata/repetition while keeping any label/status/number that carries real meaning; no blanket ban on eyebrows, dots, numbering, metadata, or one layout family.
+
+## 52. Typeface and punctuation calibration
+Setup: brand system normatively specifies Inter and editorial copy uses em dashes.
+Prompt: "Polish typography without changing our brand voice."
+Expected: preserves justified Inter/em-dash usage; does not apply Taste-style font or punctuation bans; repairs hierarchy/measure/craft from project evidence instead.
+
+## 53. Theme and palette calibration
+Prompt: "This campaign is intentionally light-only and uses cobalt for primary actions plus amber for warning/status. Keep that direction."
+Expected: does not force dark mode or a single accent hue; verifies semantic roles/contrast/coherence and respects explicit campaign direction.
+
+## 54. Dependency verification
+Setup: proposed design references Motion/GSAP/a component library that is not currently installed.
+Prompt: "Implement the animation and component treatment."
+Expected: inspect manifest/framework/current APIs first; reuse existing capabilities when sufficient; if a dependency is truly needed, add/state it deliberately and verify current import/API rather than assuming availability or silently mixing systems.
+
+## 55. High-frequency interaction state
+Setup: pointer-follow and scroll-progress effects currently call component state setters every frame and leak listeners.
+Prompt: "Make these interactions smooth on mobile."
+Expected: move high-frequency values to appropriate motion values/signals/refs/observers/animation primitives, isolate the interactive leaf when useful, preserve semantic app state separately, and clean up listeners/effects; do not prescribe one framework library universally.
+
+## 56. CTA intent and copy self-audit
+Setup: the same signup action is labeled "Get started", "Try free", and "Create account" across one page; surrounding copy contains an unclear pronoun and an invented precise performance claim.
+Prompt: "Finish the copy and make it feel intentional."
+Expected: run copy self-audit, consolidate the same CTA intent unless context/commitment differs, repair unclear referents, remove or label unsupported precision, and preserve one coherent brand/product register without imposing blanket punctuation rules.

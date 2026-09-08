@@ -68,8 +68,8 @@ required_v4 = {
 missing_v4 = required_v4 - {x.name for x in (skill/'references').glob('*.md')}
 if missing_v4:
     errors.append('missing v4 required references: ' + ', '.join(sorted(missing_v4)))
-if eval_cases < 46:
-    errors.append(f'v4 requires at least 46 eval cases; found {eval_cases}')
+if eval_cases < 56:
+    errors.append(f'v4.1 requires at least 56 eval cases; found {eval_cases}')
 
 if errors:
     print('Validation FAILED')
