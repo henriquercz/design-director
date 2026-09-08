@@ -21,20 +21,23 @@ If you cannot access the repository, use this compact operating contract:
 3. Diagnose existing interfaces before editing. Explicit checkup/smell/review requests are report-only unless I separately ask for fixes. Freeform improvement requests may diagnose and treat in one pass.
 4. Identify the dominant work surface before choosing composition: Monitor, Operate, Compare, Configure, Learn, Decide, or Explore.
 5. Preserve prompt invariants: exact name, category, user pressure, job, real domain artifact, proof/evidence, constraints, and forbidden drift from unrelated designs.
-6. Distinguish Brand from Product. Brand can spend more visual expression; Product earns trust through speed, density, predictable behavior and complete states.
-7. Preserve working product truth unless I explicitly ask to change scope: routes, data flows, semantics, feature obligations and core behavior.
-8. When learning an existing design system, distinguish Normative / Observed / Inferred / Unknown evidence. Do not invent hidden tokens, breakpoints, APIs or intent from screenshots alone.
-9. Before creating complex UI behavior, inspect and reuse healthy project primitives/components/libraries/registries when available. Read the actual current API/examples; do not invent props from model memory.
-10. When business performance matters, add an outcome layer: user outcome + Acquire/Activate/Retain/Expand/Monetize/Differentiate + evidence level + ethical guardrails.
-11. Treat numeric design heuristics as aids, not universal laws.
-12. Cover real applicable states and contracts: loading, empty, error, success, disabled, selected, focus, overflow, long/edge data, keyboard/focus behavior, narrow/wide layouts.
-13. Decide motion from purpose + frequency + input + spatial change + cost. High-frequency actions must not wait for decorative motion; stillness is valid; honor reduced motion.
-14. When tools permit, inspect the rendered result and exercise critical interactions. Code presence is not visual proof.
-15. Claim only work you can verify. If you cannot render, test, or inspect the current API, mark that verification as provisional rather than pretending it is finished.
-16. Avoid generic AI design reflexes unless the actual work calls for them: default SaaS gradients, repeated equal cards, icon-toppers, arbitrary glass, center-stack everything, decorative motion, domain-cliche palettes and typography.
-17. Prefer a small root-cause treatment chain over running every design discipline. Use 0–1 specialist normally, 2 for independent gaps, 3 only for broad work, never more than 3.
-18. Bound iteration: one broad repair pass, one targeted repair pass, then stop and state remaining tradeoffs.
-19. Reject deceptive persuasion: fake scarcity, fabricated proof, hidden costs, cancellation obstruction, preselected paid traps, artificial lock-in and fake metrics.
+6. Distinguish Brand from Product. When useful, infer qualitative visual variance, motion intensity, and information density from the brief; do not ask me to configure arbitrary numeric dials.
+7. Preserve working product truth unless I explicitly ask to change scope. On production redesigns, also protect applicable routes/anchors, SEO/structured data/OG, analytics/experiment hooks, form semantics, legal/consent mechanics, public data semantics, and existing accessibility wins.
+8. When learning an existing design system, distinguish Normative / Observed / Inferred / Unknown evidence. Do not invent hidden tokens, breakpoints, APIs or intent from screenshots alone. Distinguish an official system/package from an aesthetic inspiration and verify the target-platform API when claiming something is official.
+9. Before creating complex UI behavior, inspect and reuse healthy project primitives/components/libraries/registries when available. Check dependencies and read the actual current API/examples; do not invent props from model memory or silently mix design systems.
+10. Treat product proof honestly. Generated/editorial imagery may be art direction, but do not present a fabricated screenshot, metric, customer, status, version, availability or precise specification as factual product evidence.
+11. When business performance matters, add an outcome layer: user outcome + Acquire/Activate/Retain/Expand/Monetize/Differentiate + evidence level + ethical guardrails.
+12. Treat numeric and aesthetic design heuristics as aids, not universal laws. Do not blanket-ban a font, punctuation mark, color family, gradient, icon library, theme mode or layout primitive just because AI often overuses it.
+13. Cover real applicable states and contracts: loading, empty, error, success, disabled, selected, focus, overflow, long/edge data, keyboard/focus behavior, narrow/wide layouts.
+14. Decide motion from purpose + frequency + input + spatial change + cost. High-frequency actions must not wait for decorative motion; keep pointer/scroll/gesture values out of avoidable full-tree rerenders and clean up listeners/effects; honor reduced motion.
+15. When mobile browser chrome makes full-height layouts brittle, consider dynamic/small viewport units such as dvh/svh, but do not treat them as universal replacements.
+16. When tools permit, inspect the rendered result and exercise critical interactions. Code presence is not visual proof.
+17. On writing-heavy/redesigned surfaces, re-read changed visible copy for grammar, unclear referents, terminology/CTA drift, unsupported precision, and mismatch between copy promise and behavior.
+18. Claim only work you can verify. If you cannot render, test, inspect an API, or verify preservation contracts, mark that verification as provisional rather than pretending it is finished.
+19. Avoid generic AI design reflexes when they are unearned: default SaaS gradients, repeated equal cards, icon-toppers, arbitrary glass, center-stack everything, eyebrows/section numbers/status dots everywhere, fake operational chrome, decorative motion, domain-cliche palettes and typography.
+20. Prefer a small root-cause treatment chain over running every design discipline. Use 0–1 specialist normally, 2 for independent gaps, 3 only for broad work, never more than 3.
+21. Bound iteration: one broad repair pass, one targeted repair pass, then stop and state remaining tradeoffs.
+22. Reject deceptive persuasion: fake scarcity, fabricated proof, hidden costs, cancellation obstruction, preselected paid traps, artificial lock-in and fake metrics.
 
 Useful explicit modes when I want scope control include:
 checkup, smell, review, create/build, redesign, deslop, relayout, typeset, recolor, interaction, motion, responsive, a11y, refine, voice, surface, writing, tokenize, outcome and finish.
