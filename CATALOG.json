@@ -48,146 +48,31 @@
     "smell-report.md"
   ],
   "template_count": 6,
-  "eval_count": 46,
+  "eval_count": 56,
   "modes": [
-    {
-      "mode": "setup / brief",
-      "aliases": ["setup", "brief"],
-      "job": "create or update durable project design memory",
-      "edits": "only memory file"
-    },
-    {
-      "mode": "checkup",
-      "aliases": ["checkup"],
-      "job": "fast evidence-based health report",
-      "edits": "no"
-    },
-    {
-      "mode": "smell",
-      "aliases": ["smell"],
-      "job": "AI/generic-pattern report",
-      "edits": "no"
-    },
-    {
-      "mode": "review",
-      "aliases": ["review"],
-      "job": "deep design critique and score",
-      "edits": "no"
-    },
-    {
-      "mode": "audit",
-      "aliases": ["audit"],
-      "job": "diagnosis for the current request",
-      "edits": "no by default"
-    },
-    {
-      "mode": "direction",
-      "aliases": ["direction"],
-      "job": "define visual/product direction before implementation",
-      "edits": "no by default"
-    },
-    {
-      "mode": "create / build",
-      "aliases": ["create", "build"],
-      "job": "build a new interface or feature",
-      "edits": "yes"
-    },
-    {
-      "mode": "redesign",
-      "aliases": ["redesign"],
-      "job": "replace the visual/compositional system while preserving the product job",
-      "edits": "yes"
-    },
-    {
-      "mode": "refine",
-      "aliases": ["refine"],
-      "job": "change character using push/settle/strip/proof/activate/texture",
-      "edits": "yes"
-    },
-    {
-      "mode": "deslop",
-      "aliases": ["deslop"],
-      "job": "replace generic generated defaults with specific design decisions",
-      "edits": "yes"
-    },
-    {
-      "mode": "relayout",
-      "aliases": ["relayout"],
-      "job": "make a visible structural composition change",
-      "edits": "yes"
-    },
-    {
-      "mode": "typeset",
-      "aliases": ["typeset"],
-      "job": "create/repair typography architecture",
-      "edits": "yes"
-    },
-    {
-      "mode": "recolor",
-      "aliases": ["recolor"],
-      "job": "create/repair semantic color system",
-      "edits": "yes"
-    },
-    {
-      "mode": "interaction / interact",
-      "aliases": ["interaction", "interact"],
-      "job": "repair behavior, controls, states, feedback, recovery",
-      "edits": "yes"
-    },
-    {
-      "mode": "motion",
-      "aliases": ["motion"],
-      "job": "create/repair purposeful, frequency-aware motion",
-      "edits": "yes"
-    },
-    {
-      "mode": "responsive",
-      "aliases": ["responsive"],
-      "job": "recompose across widths, containers, input modes, zoom, direction",
-      "edits": "yes"
-    },
-    {
-      "mode": "a11y",
-      "aliases": ["a11y"],
-      "job": "accessibility-focused repair",
-      "edits": "yes"
-    },
-    {
-      "mode": "voice",
-      "aliases": ["voice"],
-      "job": "sharpen brand/art direction and proof language",
-      "edits": "yes"
-    },
-    {
-      "mode": "surface",
-      "aliases": ["surface"],
-      "job": "harden app/dashboard/tool UI for real use and real data",
-      "edits": "yes"
-    },
-    {
-      "mode": "writing",
-      "aliases": ["writing"],
-      "job": "repair interface copy and terminology",
-      "edits": "yes"
-    },
-    {
-      "mode": "tokenize",
-      "aliases": ["tokenize"],
-      "job": "consolidate proven repeated decisions into tokens/components",
-      "edits": "yes"
-    },
-    {
-      "mode": "outcome",
-      "aliases": ["outcome"],
-      "job": "diagnose user + business outcome, lifecycle/funnel friction, and evidence",
-      "edits": "no by default"
-    },
-    {
-      "mode": "finish",
-      "aliases": ["finish"],
-      "job": "pre-ship use, contract/craft verification, subtraction, small fixes",
-      "edits": "small fixes"
-    }
+    {"mode":"setup / brief","aliases":["setup","brief"],"job":"create or update durable project design memory","edits":"only memory file"},
+    {"mode":"checkup","aliases":["checkup"],"job":"fast evidence-based health report","edits":"no"},
+    {"mode":"smell","aliases":["smell"],"job":"AI/generic-pattern report","edits":"no"},
+    {"mode":"review","aliases":["review"],"job":"deep design critique and score","edits":"no"},
+    {"mode":"audit","aliases":["audit"],"job":"diagnosis for the current request","edits":"no by default"},
+    {"mode":"direction","aliases":["direction"],"job":"define visual/product direction before implementation","edits":"no by default"},
+    {"mode":"create / build","aliases":["create","build"],"job":"build a new interface or feature","edits":"yes"},
+    {"mode":"redesign","aliases":["redesign"],"job":"replace the visual/compositional system while preserving the product job","edits":"yes"},
+    {"mode":"refine","aliases":["refine"],"job":"change character using push/settle/strip/proof/activate/texture","edits":"yes"},
+    {"mode":"deslop","aliases":["deslop"],"job":"replace generic generated defaults with specific design decisions","edits":"yes"},
+    {"mode":"relayout","aliases":["relayout"],"job":"make a visible structural composition change","edits":"yes"},
+    {"mode":"typeset","aliases":["typeset"],"job":"create/repair typography architecture","edits":"yes"},
+    {"mode":"recolor","aliases":["recolor"],"job":"create/repair semantic color system","edits":"yes"},
+    {"mode":"interaction / interact","aliases":["interaction","interact"],"job":"repair behavior, controls, states, feedback, recovery","edits":"yes"},
+    {"mode":"motion","aliases":["motion"],"job":"create/repair purposeful, frequency-aware motion","edits":"yes"},
+    {"mode":"responsive","aliases":["responsive"],"job":"recompose across widths, containers, input modes, zoom, direction","edits":"yes"},
+    {"mode":"a11y","aliases":["a11y"],"job":"accessibility-focused repair","edits":"yes"},
+    {"mode":"voice","aliases":["voice"],"job":"sharpen brand/art direction and proof language","edits":"yes"},
+    {"mode":"surface","aliases":["surface"],"job":"harden app/dashboard/tool UI for real use and real data","edits":"yes"},
+    {"mode":"writing","aliases":["writing"],"job":"repair interface copy and terminology","edits":"yes"},
+    {"mode":"tokenize","aliases":["tokenize"],"job":"consolidate proven repeated decisions into tokens/components","edits":"yes"},
+    {"mode":"outcome","aliases":["outcome"],"job":"diagnose user + business outcome, lifecycle/funnel friction, and evidence","edits":"no by default"},
+    {"mode":"finish","aliases":["finish"],"job":"pre-ship use, contract/craft verification, subtraction, small fixes","edits":"small fixes"}
   ],
   "mode_count": 23
 }
