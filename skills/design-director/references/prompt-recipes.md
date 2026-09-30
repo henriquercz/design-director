@@ -14,6 +14,12 @@ Users do not need mode names. These are optional examples.
 ## Product hardening
 `$design-director Harden this dashboard for real daily use: realistic data, states, density, keyboard/touch, responsive behavior, errors, loading, and edge cases. Preserve the working flows.`
 
+## Dashboard spacing and density
+`$design-director This dashboard is slow to scan. Decide the density and spacing budget from how the work is actually used, then fix grouping and rhythm. Reduce container nesting. Do not make it look like a landing page.`
+
+## Copy that carries value
+`$design-director Rewrite the copy on this page so it communicates real value: what the product does, for whom, and why it is worth attention. Replace adjectives and unearned superlatives with the concrete reason. Do not invent precision, and do not flatten the voice.`
+
 ## Brand voice
 `$design-director Sharpen the art direction of this landing page so the brand is recognizable from the page itself. Build around the product's real proof, not generic SaaS decoration.`
 
@@ -22,6 +28,9 @@ Users do not need mode names. These are optional examples.
 
 ## Full redesign
 `$design-director Redesign this surface end-to-end while preserving product behavior and content obligations. Change the spatial premise, visual system, and interaction character, then verify the result.`
+
+## Brand / luxury art direction
+`$design-director Build a landing page for [brand]. Spend the visual variance inside the category's own language rather than escaping into an adjacent technical register, and make the motion authored rather than absent.`
 
 ## Tokenization
 `$design-director The visual decisions are approved. Consolidate the repeated values and component patterns into semantic tokens/primitives without changing the rendered design.`

@@ -88,6 +88,12 @@ Read:
 - `references/project-memory.md`
 - `references/prompt-invariants.md`
 
+**This is a gate, not a suggestion.** The three files above must be read before any work that produces a visible design result — `create`, `build`, `redesign`, `relayout`, `typeset`, `recolor`, or `finish`. "Substantial work" means any task whose output a human will look at, regardless of how small the request sounded. A five-word prompt is not an exemption; if anything it is when shortcuts are most tempting.
+
+The failure this prevents is concrete: skipping these files looks harmless because the task still completes, but the agent then has no extracted invariants, no evidence rules, and no memory of prior decisions, so it substitutes its own defaults and ships a generic result while believing it followed the skill.
+
+If you cannot read a file, state that explicitly and mark the run provisional. Do not silently proceed as if it had been read.
+
 ## 4. Diagnose
 
 For existing interfaces, classify issues before selecting treatment:
@@ -109,6 +115,8 @@ Use:
 - `references/design-evidence.md` when system/reference fidelity matters
 
 Do not create persistent reports for internal diagnosis. Explicit `checkup`, `smell`, and `review` create their defined report artifacts only.
+
+Modes may combine. A request that is both timid and generic is a `deslop` followed by a `refine` with commitment — remove the generated reflexes first, then amplify. A safe design is not fixed by adding effects to it; that is the `refine` rule in `references/refine.md`.
 
 ## 5. Direction
 
@@ -161,6 +169,32 @@ Read `references/mode-bars.md`; then load only the discipline references needed 
 
 Do not mechanically run every discipline. Load only what can change the decision.
 
+**Mandatory floor.** Selective loading is an optimization, not a permission to skip. Before building or transforming, load at minimum:
+
+- `references/motion.md` for every `create`, `build`, `redesign`, or `relayout` task. A brand surface ships as dead weight if motion was never read, because "I did not load it" and "motion is not appropriate here" are indistinguishable after the fact. If the honest conclusion is still low motion, that conclusion must be reached from `motion.md`, not from skipping it.
+- `references/calibration.md` whenever the task involves a recognizable category whose visual language you might be tempted to avoid.
+
+A discipline is not "loaded" because it appears in this list. It is loaded when the file was read before the decision it governs was made.
+
+**Craft floor before editing.** After the diagnosis and direction are resolved and immediately before the first UI edit, load `references/micro-craft.md`. It carries the quality floor that gates the edit itself — contrast, depth, spacing relationship, type scale, one authored motion moment, state coverage, browser surfaces, and copy.
+
+Reading it after the UI exists is self-review, not a floor. A floor that is consulted once the work is already built cannot hold the work up.
+
+## Craft posture
+
+Distinctiveness is the deliverable, not a garnish. Hedged, safe, and evenly-measured work is the failure state even when nothing is technically wrong.
+
+Commit to a point of view and defend it with evidence. State the thesis, then build to it rather than averaging toward the middle. Where the committed direction and the refined instinct conflict, commit.
+
+Do not announce the floor or narrate it while building. Build to it.
+
+**Register-conditioned floor.** The register of the task also decides what must be read, because the common failure is importing the wrong register's grammar:
+
+- **Product/dashboard/editor/admin work** (repeated use, `surface`, `interaction`, `responsive`): load `references/surface.md` and `references/registers.md` before composing. Spacing, density, and state coverage are decided here.
+- **Brand/marketing work** (arrival and persuasion, `voice`, `deslop`, `redesign`): load `references/writing.md` and `references/voice.md` before writing any user-facing string. Copy that carries value is part of the design, not a finishing pass.
+
+Never let a brand instinct shape a product surface, or a product instinct flatten a brand surface.
+
 ## 7. Companion skills
 
 Use installed companion skills as specialists, never as parallel directors. Read `references/companion-routing.md`.
@@ -182,6 +216,10 @@ Recommended roles:
 - `revenue-centric-design` — optional external specialist for SaaS/startup CRO, activation, retention, pricing, and growth strategy; its source-available license and gambling/betting/casino restriction remain fully separate and must be honored.
 
 When a project has a live component registry/library/MCP, consult its current API/examples as implementation truth when needed; do not install a new component stack just because one exists.
+
+**Mandatory second lens for new visual work.** For `create`, `build`, `redesign`, or `relayout`, consult at least one installed companion that supplies art direction or reference language the bundled references cannot — normally `frontend-design`, or `popular-web-designs` when the task needs concrete reference study.
+
+This is not delegation. The companion contributes a visual vocabulary; Design Director keeps the thesis, resolves conflicts, and owns the result. Skipping it because "the bundled references are enough" is the most common cause of a competent but tonally safe result. If no companion is installed, say so explicitly in the final summary rather than silently proceeding.
 
 If a companion is absent, continue with bundled references.
 

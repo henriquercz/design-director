@@ -15,6 +15,27 @@ Optimize for:
 
 Brand can tolerate higher visual variance if coherence and usability remain intact.
 
+## Do not import marketing grammar into product UI
+
+The two registers fail in opposite directions, and each failure is common.
+
+- A **brand** surface that borrows product grammar becomes a dashboard: equal-weight card grids, uniform section rhythm, neutral copy, no art direction, no memorable arrival. It explains features and forgets to persuade.
+- A **product** surface that borrows brand grammar becomes a landing page: centered hero, oversized display type, decorative numbering, scroll-reveal choreography, marketing proof blocks, and marketing spacing. It looks promotional and scans slowly.
+
+Classify the register from the dominant user job before choosing composition. If the dominant job is repeated use, the marketing instincts are the wrong instincts even when they would "look more designed". If the job is arrival and persuasion, product minimalism wastes the surface.
+
+### Spend Brand variance inside the category, not beside it
+
+A category's own visual language is not a cliché to escape. Escaping into an **adjacent** register to prove restraint is its own kind of generated default.
+
+- **Luxury / premium / heritage:** variance belongs in editorial craft — scale contrast, negative space, image treatment, restraint of color, a distinctive display voice. Neither the extreme close-up nor the monochrome technical register is a default here.
+- **Precision / engineering / technical:** variance belongs in system legibility, data density, instrument honesty, mechanism as proof.
+- **Playful / expressive:** variance belongs in illustration, motion personality, and typographic play.
+
+Choosing a register that is *adjacent to but not* the brief's category produces a page that is disciplined and tonally wrong. It reads as a competent engineering brochure for a fashion house, or an austere German instrument panel for a lifestyle brand.
+
+Before committing, name the category's inherited visual language out loud, then decide which parts you are keeping on purpose. Escaping is a decision that needs a reason; keeping is the default.
+
 ## Product
 Typical surfaces: apps, dashboards, admin panels, work tools, repeated-use workflows.
 

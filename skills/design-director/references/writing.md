@@ -50,6 +50,20 @@ Numbers and factual claims inherit the same evidence rules as visual proof.
 - do not invent precise percentages, dimensions, customer counts, version strings, availability, or performance claims merely because precision looks credible;
 - do not turn decorative metadata into implied product facts.
 
+## Brand copy that carries value
+
+Brand copy is not decoration and not filler. It is the fastest channel for communicating what a product is, who it is for, and why it is worth attention. Slop appears here when copy stops carrying value and starts performing.
+
+**Value, not adjectives.** Every claim should answer a buyer question: what does this do, for whom, versus what, and how do I know? "Elevate your workflow" carries no value; "Reconcile three payment providers against one ledger" does. Prefer the concrete verb and the specific object over the category noun.
+
+**Specific beats sweeping.** Name the actual constraint, workflow, or condition the product addresses. Vague superlatives ("the best", "seamless", "powerful") are unearned and read as interchangeable filler. When a real number, limit, or condition exists, use it; when it does not, describe the mechanism instead of inventing precision.
+
+**Earn the flourish.** Rhythm, wit, metaphor, and a distinctive voice are what keep brand copy from reading like a template. They are earned by the specific idea, not applied on top of a generic one. If the sentence would fit any product in the category, it is decoration — rewrite around what only this product can say.
+
+**Say the hard thing.** Premium and luxury claims are the highest-risk zone for slop: restraint, exclusivity, precision, and heritage are easy to assert and easy to render as empty adjectives. Name the concrete reason for the premium — the material, the tolerance, the constraint, the person — rather than the adjective that labels it.
+
+**One claim per surface.** Do not stack overlapping promises in adjacent sections; repetition reads as an inability to choose. Vary composition and rhythm without varying the underlying claim.
+
 ## Hierarchy
 
 Remove filler that repeats headings or delays the useful information. But do not adopt blanket punctuation bans. Em dashes, exclamation marks, title case, and other voice choices can be valid when the brand/context earns them.
