@@ -235,3 +235,43 @@ Expected: move high-frequency values to appropriate motion values/signals/refs/o
 Setup: the same signup action is labeled "Get started", "Try free", and "Create account" across one page; surrounding copy contains an unclear pronoun and an invented precise performance claim.
 Prompt: "Finish the copy and make it feel intentional."
 Expected: run copy self-audit, consolidate the same CTA intent unless context/commitment differs, repair unclear referents, remove or label unsupported precision, and preserve one coherent brand/product register without imposing blanket punctuation rules.
+
+## 57. Minimal-prompt luxury brand build
+Setup: greenfield directory, no project files, no brief, no memory, no brand evidence. Prompt is five words naming a heritage luxury brand category.
+Prompt: "Make a professional landing page about [brand]."
+Expected: still satisfies the section 3 gate (design-evidence, project-memory, prompt-invariants) before building; spends Brand visual variance inside the category's own language (editorial craft, scale, space, restraint) rather than escaping into an adjacent monochrome-technical register; does not substitute a cold engineering/dashboard idiom for an editorial luxury one; brief size is never a reason to skip the gate.
+
+## 58. Register-escape detection
+Setup: a heritage automotive or fashion brand brief where monochrome technical styling would read as "premium" and as an escape from cliche.
+Prompt: "Make it look expensive without looking generic."
+Expected: names the category's inherited visual language before rejecting it; keeps category conventions deliberately and varies elsewhere; treats "avoiding the obvious" as a decision requiring a reason, not a default; result should be tonally specific to the brief, not reusable across five unrelated brands.
+
+## 59. Motion coverage floor on creation
+Setup: greenfield brand landing page, minimal prompt, no existing motion system.
+Prompt: "Build me a landing page."
+Expected: motion.md is read before the motion decision even when the brief is minimal; if the outcome is low motion, the conclusion is derived from motion.md purpose/frequency/input matrix rather than from never loading it; avoids the observable failure of shipping a brand surface with no authored motion because the discipline was skipped as optional.
+
+## 60. Companion second lens on new visual work
+Setup: frontend-design and/or popular-web-designs are installed.
+Prompt: "Create a new marketing page for [product]."
+Expected: consults at least one art-direction/reference companion before committing to a visual system; the companion supplies vocabulary while Design Director retains thesis ownership and conflict resolution; if no companion is installed, that absence is stated in the final summary instead of silently proceeding.
+
+## 61. Product surface is not a landing page
+Setup: existing analytics dashboard with real data, working filters, and nested card hierarchy.
+Prompt: "Make this dashboard look better."
+Expected: routes to surface before any visual flourish; keeps product grammar (navigation, dense organized information, comparison support, visible state, restrained motion); does not import centered hero, oversized display type, decorative numbering, or scroll-reveal choreography; reduces container nesting in favor of spacing, alignment, and type weight; density derived from frequency and expertise rather than from marketing spacing habits.
+
+## 62. Dashboard spacing as the density instrument
+Setup: dense operator UI where grouping is currently achieved with nested padded panels.
+Prompt: "Tighten this up and add some breathing room."
+Expected: decides the spacing budget before adding/removing containers; groups by relationship, alignment, and dividers before padding; tightens where the user compares or scans repeatedly and widens where content is read once or decisions are consequential; outcome is fewer containers with better rhythm, not new decoration.
+
+## 63. Brand copy carries value
+Setup: a luxury or premium brand landing page whose headline and section copy rely on adjectives and unearned superlatives.
+Prompt: "Rewrite the copy so it sounds more premium."
+Expected: replaces adjective-performance with the concrete reason for the premium (material, tolerance, constraint, person, mechanism); states what the product does, for whom, and how it is known; avoids invented precision; keeps or earns real voice rather than flattening to bland clarity; does not stack overlapping promises across adjacent sections.
+
+## 64. Cross-register grammar contamination
+Setup: a marketing page currently built as a dashboard (equal-weight card grid, uniform rhythm, no art direction), or a dashboard currently built as a landing page.
+Prompt: "Improve this page."
+Expected: classifies the dominant register from the user job before composing; identifies which register's grammar was wrongly imported; repairs at the composition level rather than by restyling; a product surface is not beautified with marketing composition, and a brand surface is not flattened with product minimalism.

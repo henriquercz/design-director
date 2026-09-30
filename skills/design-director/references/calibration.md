@@ -64,6 +64,16 @@ Hook/support/detail can be a helpful pattern, but content may need two, four, or
 ### Typography families
 Inter, serif faces, display sans faces, monospace, and mixed-family systems are all valid when the content, brand, language coverage, performance, and hierarchy justify them. Do not blacklist specific fonts because models overuse them; reject reflexive choice, not the typeface itself.
 
+### Defensive anti-cliché art direction
+Avoiding a known default is not the same as choosing well. Overcorrecting out of a category's own visual language into an adjacent, more "tasteful-looking" register (luxury → monochrome technical telemetry, editorial → austere data instrument, brand → product-dashboard) is itself a generated default: it is reusable across unrelated briefs and produces competent work that is tonally wrong for this one.
+
+Symptom check: if the same visual language would be defensible for five different brands in five different categories, it is a register escape, not art direction. Judge the choice against the specific brief, and prefer keeping a category convention deliberately over avoiding one.
+
+### Restraint as a substitute for art direction
+Restrained palettes, low visual variance, and minimal decoration read as considered only when they are visibly serving hierarchy and evidence. When restraint is chosen because the expressive option felt risky, the result is an unfinished page wearing a minimal aesthetic.
+
+Restraint is a decision that needs a subject. Ask what the design is being restrained *for*; without an answer, the restraint is avoidance.
+
 ### Punctuation
 No blanket ban on em dashes, en dashes, exclamation marks, title case, middle dots, or other punctuation. Use language conventions, localization, voice, readability, and semantics. Decorative separator overuse can be a smell without making the character itself forbidden.
 
@@ -149,6 +159,7 @@ Always honor OS/browser reduced-motion preference. A custom No/Reduced/Standard/
 - forcing one accent, dual-theme support, one corner system, one image minimum, one hero text formula, or one navigation height across unrelated products;
 - requiring image generation, marquees, bento diversity, or section-layout quotas just to appear designed;
 - treating `100dvh`, CSS Grid, Tailwind, Motion, GSAP, React, or Next.js as universal implementation defaults;
+- escaping a brand's inherited visual language into an adjacent register purely to avoid looking generic;
 - inferring hidden design tokens/APIs from screenshots;
 - hand-rolling complex accessible primitives without checking the project/library first;
 - fabricating product screenshots, metrics, status, or precision and presenting them as evidence;

@@ -34,6 +34,12 @@ Spacing communicates grouping before decoration does.
 
 Use a small coherent scale, not random values. Do not force every project onto one universal 4/8 or 1-4-9 arithmetic.
 
+## Browser surfaces
+
+The parts the agent does not draw still carry the design. Text selection color, the caret, scrollbars, focus rings, underline offset, placeholder styling, and the numerals in tabular data all ship as browser defaults belonging to no design system.
+
+Theme these from the project palette. This is the cheapest signal that a page was built rather than assembled, and one of the most frequently skipped.
+
 ## Icons
 
 - use one visual family unless a deliberate exception exists;
